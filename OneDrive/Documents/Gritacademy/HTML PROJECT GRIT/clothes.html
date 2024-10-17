@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes | Shajwastore</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: var(--font-secondary);
+            background-color: #f3f4f6;
+            background: url('images/clothesbakgrund.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #1e293b;
+        }
+
+        header {
+            background-color: #d81da3;
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            font-family: var(--font-secondary);
+            font-size: 1rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #93c5fd;
+        }
+
+        .card:nth-child(1) {
+            background-color: #f87171; /* Red */
+        }
+
+        .card:nth-child(2) {
+            background-color: #fbbf24; /* Amber */
+        }
+
+        .card:nth-child(3) {
+            background-color: #34d399; /* Green */
+        }
+
+        .card:nth-child(4) {
+            background-color: #60a5fa; /* Blue */
+        }
+
+        .card:nth-child(5) {
+            background-color: #a78bfa; /* Purple */
+        }
+
+        .card:nth-child(6) {
+            background-color: #f472b6; /* Pink */
+        }
+
+        .card {
+            border: none;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: white;
+            margin-top: 1rem;
+        }
+
+        .card-text {
+            color: white;
+        }
+
+        .btn-primary {
+            background-color: #1d4ed8;
+            border-color: #1d4ed8;
+            transition: background-color 0.3s ease;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #2563eb;
+        }
+
+        .footer {
+            background-color: rgba(229, 231, 235, 0.9);
+            color: #1e293b;
+        }
+
+        .footer a {
+            color: #2563eb;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+    <header>
+        <div class="container mx-auto px-4">
+            <a href="index.html">Shajwastore</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="beauty-products.html">Beauty Products</a></li>
+                    <li><a href="clothes.html">Clothes</a></li>
+                    <li><a href="skincare.html">Skin Care</a></li>
+                    <li><a href="jewelry.html">Jewelry</a></li>
+                    <li><a href="policies.html">Policies</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="container py-5">
+        <h2 class="text-center text-gray-800 font-bold text-4xl mb-8">Clothes Collection</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Product 1 -->
+            <div class="card h-full">
+                <img src="images/men casual shirts.jfif" alt="Men Casual Shirts" class="card-img-top object-cover w-full h-64 rounded-t-lg">
+                <div class="card-body p-4">
+                    <h5 class="card-title">Men Casual Shirts</h5>
+                    <p class="card-text font-bold"><strong>699 SEK</strong></p>
+                    <a href="cart.html" class="btn btn-primary w-full mt-4">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="card h-full">
+                <img src="images/women casual dresses.webp" alt="Women Casual Dresses" class="card-img-top object-cover w-full h-64 rounded-t-lg">
+                <div class="card-body p-4">
+                    <h5 class="card-title">Women Casual</h5>
+                    <p class="card-text font-bold"><strong>249 SEK</strong></p>
+                    <a href="cart.html" class="btn btn-primary w-full mt-4">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="card h-full">
+                <img src="images/women underwear.webp" alt="Women Underwear" class="card-img-top object-cover w-full h-64 rounded-t-lg">
+                <div class="card-body p-4">
+                    <h5 class="card-title">Women Underwear</h5>
+                    <p class="card-text font-bold"><strong>499 SEK</strong></p>
+                    <a href="cart.html" class="btn btn-primary w-full mt-4">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="card h-full">
+                <img src="images/unisex hoodies.jfif" alt="Unisex Hoodies" class="card-img-top object-cover w-full h-64 rounded-t-lg">
+                <div class="card-body p-4">
+                    <h5 class="card-title">Unisex Hoodies</h5>
+                    <p class="card-text font-bold"><strong>399 SEK</strong></p>
+                    <a href="cart.html" class="btn btn-primary w-full mt-4">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="card h-full">
+                <img src="images/sporthoodies.avif" alt="Sports Hoodie" class="card-img-top object-cover w-full h-64 rounded-t-lg">
+                <div class="card-body p-4">
+                    <h5 class="card-title">Sports Hoodie</h5>
+                    <p class="card-text font-bold"><strong>599 SEK</strong></p>
+                    <a href="cart.html" class="btn btn-primary w-full mt-4">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="card h-full">
+                <img src="images/leather jacket.webp" alt="Leather Jacket" class="card-img-top object-cover w-full h-64 rounded-t-lg">
+                <div class="card-body p-4">
+                    <h5 class="card-title">Leather Jacket</h5>
+                    <p class="card-text font-bold"><strong>999 SEK</strong></p>
+                    <a href="cart.html" class="btn btn-primary w-full mt-4">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer text-center py-4 mt-4">
+        <p>&copy; 2024 Shajwa E-Commerce Store. All Rights Reserved.</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="policies.html">Privacy Policy</a></li>
+            <li class="list-inline-item"><a href="contact-us.html">Contact Us</a></li>
+            <li class="list-inline-item"><a href="faq.html">FAQ</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
